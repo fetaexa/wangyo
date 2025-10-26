@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wangyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            height: 100vh;
+            animation: pagetransition .48s ease;
+        }
+
+        @keyframes pagetransition {
+            0% {
+                opacity: 0;
+                transform: translateY(10px) scale(.99);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0px) scale(1);
+            }
+        }
+
+        #search {
+            background-color: #6c757d;
+        }
+
+        #search:hover {
+            background-color: white;
+        }
+
+        .kartu{
+            width: 23%;
+            height: 35rem;
+            background: linear-gradient(170deg, #fff,#ffebeb53);
+            transition: .23s ease;
+        }
+        
+        .kartu:hover{
+            filter: drop-shadow(10px 20px 1px rgba(0, 0, 0, 0.199));
+            transform: translateY(-8px) scale(1.01);
+        }
+    </style>
+</head>
+
+<!-- <img src="https://i.ibb.co.com/Mx9zmLLL/Gambar-Whats-App-2025-10-21-pukul-21-06-17-a02718de.jpg" alt="Gambar-Whats-App-2025-10-21-pukul-21-06-17-a02718de" border="0"> -->
+
+<body style="max-height: 1000px;overflow: hidden;background: linear-gradient(70deg, #2b7ffc,#81aef8);">
+    <div class="container-fluid w-100">
+        <div class="d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg bg-tertiary w-100 rounded-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="https://i.ibb.co.com/KjHJ5bwS/stembayo-bg.png" alt="stembayo-bg" border="0" width="60px">
+                <a class="navbar-brand fs-1 fw-bold m-2" href="#">Wangyo</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Beranda</a>
+                        </li>
+                        <li class="nav-item fw-bold bg bg-secondary rounded-3">
+                            <a class=" nav-link active text-light" aria-current="page" href="room.html">Ruangan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Tentang</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" data-bs-theme="light">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button id="search" class="btn btn-outline-light" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <center class="d-flex align-items-center justify-content-center" style="height: 90%;">
+        <div class="container m-4">
+            <div class="row d-flex justify-content-center">
+                <div class="card p-2 m-1 kartu">
+                    <img src="https://i.ibb.co.com/4gN37xDW/ruangbima.jpg" class="card-img-top rounded-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruang Bima</h5>
+                        <p class="card-text">Kapasitas 150 orang</p>
+                        <p class="card-text">1 Proyektor</p>
+                        <p class="card-text">4 AC</p>
+                        <p class="card-text">Panggung Besar</p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
+                            onclick="nama(this)">Buat Reservasi</a>
+                    </div>
+                </div>
+                <div class="card p-2 m-1 kartu">
+                    <img src="https://i.ibb.co.com/zHPdPTKm/ruangarjuna.jpg" class="card-img-top rounded-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruang Arjuna</h5>
+                        <p class="card-text">Kapasitas 40 orang</p>
+                        <p class="card-text">Kapasitas: </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
+                            onclick="nama(this)">Buat Reservasi</a>
+                    </div>
+                </div>
+                <div class="card p-2 m-1 kartu">
+                    <img src="https://i.ibb.co.com/SwSCNFsX/nakulasadewa.jpg" class="card-img-top rounded-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruang Nakula Sadewa</h5>
+                        <p class="card-text">Kapasitas 100 orang</p>
+                        <p class="card-text">Kapasitas: </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
+                            onclick="nama(this)">Buat Reservasi</a>
+                    </div>
+                </div>
+                <div class="card p-2 m-1 kartu">
+                    <img src="https://i.ibb.co.com/dsbx23cw/ruangyudhistira.jpg" class="card-img-top rounded-2">
+                    <div class="card-body">
+                        <h5 class="card-title">Ruang Yudhistira</h5>
+                        <p class="card-text">Kapasitas 25 orang </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <p class="card-text">Kapasitas: </p>
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
+                            onclick="nama(this)">Buat Reservasi</a>
+                    </div>
+                </div>
+                <div class="modal fade" id="reservasi" tabindex="-1" aria-labelledby="reservasiLabel" aria-hidden="true"
+                    style="overflow: hidden;">
+                    <div class="modal-dialog h-100 d-flex align-items-center">
+                        <div class="modal-content"
+                            style="background: linear-gradient(70deg, #2b7ffc57,#81aff814);backdrop-filter: blur(10px);">
+                            <div class="modal-header d-flex justify-content-center">
+                                <h5 class="modal-title text-light fs-3" id="reservasiLabel"></h5>
+                            </div>
+                            <div class="modal-body bg" style="background: transparent;">
+                                <form>
+                                    <div class="mb-4">
+                                        <!-- <label for="" class="col-form-label">Nama Lengkap:</label> -->
+                                        <input type="text" class="form-control" placeholder="Nama Lengkap">
+                                    </div>
+                                    <div class="mb-4">
+                                        <input type="tel" class="form-control" placeholder="Nomor Telfon">
+                                    </div>
+                                    <div class="mb-3">
+                                        <input type="date" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <!-- <input type="time" class="form-control" placeholder="waktu"> -->
+                                    </div>
+                                    <div class="d-flex flex-column mb-3" style="gap: 10px;">
+                                        <div class="d-flex mb-1 text-light">
+                                            <label class="w-50 d-flex justify-content-start">Dari: </label>
+                                            <label class="w-50 d-flex justify-content-start">Sampai: </label>
+                                        </div>
+                                        <div class="d-flex mb-3 gap-3">
+                                            <input type="time" class="form-control" id="from" onkeydown="isKeyPressed(event)" placeholder="dari">
+                                            <input type="time" class="form-control" id="to" placeholder="sampai">
+                                    </div>
+                                    <!-- <div class="mb-3">
+                                        <select class="form-select" required>
+                                            <option value="">Pilih Waktu</option>
+                                            <option>08:00 - 10:00</option>
+                                            <option>10:00 - 12:00</option>
+                                            <option>13:00 - 15:00</option>
+                                            <option>15:00 - 17:00</option>
+                                        </select>
+                                    </div> -->
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                                <button type="button" class="btn btn-primary" data-bs-target="#reservasiBerhasil"
+                                    data-bs-toggle="modal">Konfirmasi</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="reservasiBerhasil" tabindex="-1" aria-labelledby="reservasiLabel"
+                    aria-hidden="true" style="overflow: hidden;">
+                    <div class="modal-dialog h-100 d-flex align-items-center">
+                        <div class="modal-content"
+                            style="background: linear-gradient(70deg, #2b7ffc57,#81aff814);backdrop-filter: blur(10px);">
+                            <div class="modal-header d-flex justify-content-center">
+                                <h1 class="modal-title text-light" id="reservasiLabelBerhasil" style="font-size: 2.5rem;">
+                                    Reservasi berhasil dibuat!</h1>
+                                <!-- <div style="height: 32px;"></div> -->
+                                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button> -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
+                                <!-- <button type="button" class="btn btn-primary">Simpan</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </center>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+    <script>
+        function nama(a) {
+            event.preventDefault();
+            const namaRuang = a.closest(".card-body").getElementsByTagName("h5")[0].innerText;
+            document.getElementById("reservasiLabel").innerText = "Buat Reservasi " + namaRuang;
+        }
+    </script>
+    <script>
+        function isKeyPressed(event){
+            const to = document.getElementById('to');
+            if (event.key === "Enter") {
+                event.preventDefault();
+                to.focus();
+            }
+        }
+    </script>
+</body>
+
+</html>

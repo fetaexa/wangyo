@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wangyo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        body {
+            animation: pagetransition .48s ease;
+        }
+
+        @keyframes pagetransition {
+            0% {
+                opacity: 0;
+                transform: translateY(10px) scale(.99);
+
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0px) scale(1);
+            }
+        }
+
+        #search {
+            background-color: #6c757d;
+        }
+
+        #search:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body style="max-height: 1000px;overflow: hidden;background: linear-gradient(290deg, #2b7ffc,#81aef8);">
+    <div class="container-fluid w-100">
+        <div class="d-flex align-items-center">
+            <nav class="navbar navbar-expand-lg bg-tertiary w-100 rounded-2">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="https://i.ibb.co.com/gLxHy74b/stembayo-bg.png" alt="stembayo-bg" border="0" width="60px">
+                <!-- <img src="https://ibb.co.com/rRVTktdK.png" style="width: 60px;" class="m-2"> -->
+                <a class="navbar-brand fs-1 fw-bold m-2" href="#">Wangyo</a>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item fw-bold bg bg-secondary rounded-3 text-center">
+                            <a class="nav-link active text-light" aria-current="page" href="home.html">Beranda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="room.html">Ruangan</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Tentang</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" data-bs-theme="light">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button id="search" class="btn btn-outline-light" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <h1 class="text-wrap" style="font-size: 6rem;"><strong>Selamat datang<br> di Wangyo</strong></h1>
+                <h4 style="font-size: 2.8rem;">Dimana anda dapat<br> menyewa ruangan stembayo</h4>
+            </div>
+            <div class="row">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1320"
+                    style="transform: rotate(-260deg) translateX(-500px) translateY(500px); z-index: -10;">
+                    <defs>
+                        <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%" gradientTransform="rotate(50)">
+                            <stop offset="0%" stop-color="#B2F4F8" />
+                            <stop offset="100%" stop-color="#fff" />
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#grad)" fill-opacity="1"
+                        d="M0,224L30,192C60,160,120,96,180,80C240,64,300,96,360,96C420,96,480,64,540,96C600,128,660,224,720,250.7C780,277,840,235,900,224C960,213,1020,235,1080,245.3C1140,256,1200,256,1260,229.3C1320,203,1380,149,1410,122.7L1440,96L1440,1320L0,1320Z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1320"
+                    style="transform: rotate(-260deg) translateX(-1630px) translateY(620px); z-index: -12;filter:blur(50px)">
+                    <path fill="#000" fill-opacity=".536"
+                        d="M0,224L30,192C60,160,120,96,180,80C240,64,300,96,360,96C420,96,480,64,540,96C600,128,660,224,720,250.7C780,277,840,235,900,224C960,213,1020,235,1080,245.3C1140,256,1200,256,1260,229.3C1320,203,1380,149,1410,122.7L1440,96L1440,1320L0,1320Z" />
+                </svg>
+                <!-- <img src="wp6746813.jpg" width="100%" height="auto" style="z-index: 100;"> -->
+                <img src="https://i.ibb.co.com/PvswN2TY/stembayo.jpg" class="img-fluid" alt="..."
+                    style="position: absolute;top: 0;right: 0;margin: 180px;margin-top: 180px;height: 400px;width: auto;z-index: -14;border-radius: 50px;">
+                <img src="https://i.ibb.co.com/PvswN2TY/stembayo.jpg" class="img-fluid" alt="..."
+                    style="position: absolute;top: 0;right: 0;margin: 180px;margin-top: 180px;height: 400px;width: auto;z-index: -15;border-radius: 50px;filter: brightness(0) blur(30px);transform: translate(30px, 30px);">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
