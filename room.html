@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wangyo</title>
+    <link rel="prefetch" href="home.html" as="document">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <style>
@@ -69,6 +70,47 @@
                 animation: pagetransition .48s ease;
             }
         }
+
+        hr {
+            height: 2px;
+            background-image: linear-gradient(90deg, #73727200, #645252, #ffffff00);
+            border: none;
+            border-radius: 50%;
+        }
+
+        .card-body * {
+            margin: 5px;
+        }
+
+        .card-body p:hover {
+            background-image: linear-gradient(90deg, #73727200, #6452524a, #ffffff00);
+            border-radius: 500px;
+        }
+
+        .calendarParent {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            gap: 8px;
+        }
+
+        .calendarParent div {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #afafaf;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7px;
+            cursor: pointer;
+        }
+
+        div.booked {
+            background: #5e67fa;
+            display: flex;
+            z-index: 10;
+        }
     </style>
 </head>
 
@@ -118,58 +160,105 @@
                     <div class="card p-2 m-1 kartu">
                         <img src="https://i.ibb.co.com/4gN37xDW/ruangbima.jpg" class="card-img-top rounded-2">
                         <div class="card-body">
-                            <h5 class="card-title">Ruang Bima</h5>
+                            <h5 class="card-title fw-bold">Ruang Bima</h5>
+                            <hr>
                             <p class="card-text">Kapasitas 150 orang</p>
+                            <hr>
                             <p class="card-text">1 Proyektor</p>
+                            <hr>
                             <p class="card-text">4 AC</p>
+                            <hr>
                             <p class="card-text">Panggung Besar</p>
+                            <hr>
+                            <p class="card-text">Mic dan speaker</p>
+                            <hr>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
-                                onclick="nama(this)">Buat Reservasi</a>
+                                onclick="nama(this);fontSizeJudul(this)">Buat Reservasi</a>
                         </div>
                     </div>
                     <div class="card p-2 m-1 kartu">
                         <img src="https://i.ibb.co.com/zHPdPTKm/ruangarjuna.jpg" class="card-img-top rounded-2">
                         <div class="card-body">
-                            <h5 class="card-title">Ruang Arjuna</h5>
+                            <h5 class="card-title fw-bold">Ruang Arjuna</h5>
+                            <hr>
                             <p class="card-text">Kapasitas 40 orang</p>
-                            <p class="card-text">Kapasitas: </p>
-                            <p class="card-text">Kapasitas: </p>
-                            <p class="card-text">Kapasitas: </p>
+                            <hr>
+                            <p class="card-text">1 Proyektor</p>
+                            <hr>
+                            <p class="card-text">2 AC</p>
+                            <hr>
+                            <p class="card-text">1 Papan Tulis</p>
+                            <hr>
+                            <p class="card-text">Mic dan speaker</p>
+                            <hr>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
-                                onclick="nama(this)">Buat Reservasi</a>
+                                onclick="nama(this);fontSizeJudul(this)">Buat Reservasi</a>
                         </div>
                     </div>
                     <div class="card p-2 m-1 kartu">
                         <img src="https://i.ibb.co.com/SwSCNFsX/nakulasadewa.jpg" class="card-img-top rounded-2">
                         <div class="card-body">
-                            <h5 class="card-title">Ruang Nakula Sadewa</h5>
+                            <h5 class="card-title fw-bold">Ruang Nakula Sadewa</h5>
+                            <hr>
                             <p class="card-text">Kapasitas 100 orang</p>
-                            <p class="card-text">Kapasitas: </p>
-                            <p class="card-text">Kapasitas: </p>
-                            <p class="card-text">Kapasitas: </p>
+                            <hr>
+                            <p class="card-text">2 Proyektor</p>
+                            <hr>
+                            <p class="card-text">6 AC</p>
+                            <hr>
+                            <p class="card-text">1 Papan tulis</p>
+                            <hr>
+                            <p class="card-text">Mic dan speaker</p>
+                            <hr>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
-                                onclick="nama(this)">Buat Reservasi</a>
+                                onclick="nama(this);fontSizeJudul(this)">Buat Reservasi</a>
                         </div>
                     </div>
                     <div class="card p-2 m-1 kartu">
                         <img src="https://i.ibb.co.com/dsbx23cw/ruangyudhistira.jpg" class="card-img-top rounded-2">
                         <div class="card-body">
-                            <h5 class="card-title">Ruang Yudhistira</h5>
+                            <h5 class="card-title fw-bold">Ruang Yudhistira</h5>
+                            <hr>
                             <p class="card-text">Kapasitas 25 orang </p>
-                            <p class="card-text">Kapasitas: </p>
-                            <p class="card-text">Kapasitas: </p>
-                            <p class="card-text">Kapasitas: </p>
+                            <hr>
+                            <p class="card-text">1 Proyektor</p>
+                            <hr>
+                            <p class="card-text">2 AC</p>
+                            <hr>
+                            <!-- <p class="card-text"></p> -->
+                            <p class="card-text">Mic dan speaker</p>
+                            <hr>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
-                                onclick="nama(this)">Buat Reservasi</a>
+                                onclick="nama(this);fontSizeJudul(this)">Buat Reservasi</a>
                         </div>
                     </div>
                     <div class="modal fade" id="reservasi" tabindex="-1" aria-labelledby="reservasiLabel"
                         aria-hidden="true" style="overflow: hidden;">
-                        <div class="modal-dialog h-100 d-flex align-items-center">
-                            <div class="modal-content"
+                        <div class="modal-dialog h-100 d-flex align-items-center" style="width: 100vw;margin: 0;max-width: 60vw;">
+                            <!-- KALENDER RESERVASI -->
+                            <div class="modal-content m-2"
+                                style="background: linear-gradient(70deg, #2b7ffc57,#81aff814);backdrop-filter: blur(10px);margin: 0;">
+                                <div class="modal-header d-flex justify-content-center">
+                                    <h5 class="modal-title text-light fs-3" id="reservasiKalender">Kalender Reservasi</h5>
+                                </div>
+                                <div class="modal-body bg" style="background: transparent;height: 316px;">
+                                    <div class="calendarParent">
+                                        <div class="div1">1</div><div class="div2">2</div><div class="div3">3</div><div class="div4">4</div><div class="div5">5</div>
+                                        <div class="div6">6</div><div class="div7">7</div><div class="div8">8</div><div class="div9">9</div><div class="div10">10</div>
+                                        <div class="div11">11</div><div class="div12">12</div><div class="div13">13</div><div class="div14">14</div><div class="div15">15</div>
+                                        <div class="div16">16</div><div class="div17 booked">17</div><div class="div18 booked">18</div><div class="div19 booked">19</div>
+                                        <div class="div20">20</div><div class="div21">21</div><div class="div22">22</div><div class="div23">23</div><div class="div24">24</div>
+                                        <div class="div25">25</div><div class="div26">26</div><div class="div27">27</div><div class="div28">28</div><div class="div29">29</div>
+                                        <div class="div30">30</div><div class="div31">31</div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer" style="height: 70px;"></div>
+                            </div>
+                            <!-- MODAL RESERVASI -->
+                            <div class="modal-content m-2"
                                 style="background: linear-gradient(70deg, #2b7ffc57,#81aff814);backdrop-filter: blur(10px);">
                                 <div class="modal-header d-flex justify-content-center">
-                                    <h5 class="modal-title text-light fs-3" id="reservasiLabel"></h5>
+                                    <h5 class="modal-title text-light" style="font-size: 28px;" id="reservasiLabel"></h5>
                                 </div>
                                 <div class="modal-body bg" style="background: transparent;">
                                     <form>
@@ -228,6 +317,7 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
         </center>
 
@@ -237,19 +327,24 @@
         <script>
             function nama(a) {
                 event.preventDefault();
+                const judul = document.getElementById('reservasiLabel')
                 const namaRuang = a.closest(".card-body").getElementsByTagName("h5")[0].innerText;
                 document.getElementById("reservasiLabel").innerText = "Buat Reservasi " + namaRuang;
-            }
+                
+            };
         </script>
-        <!-- <script>
-        function isKeyPressed(event){
-            const to = document.getElementById('to');
-            if (event.key === "Enter") {
-                event.preventDefault();
-                to.focus();
-            }
-        }
-    </script> -->
+        <script>
+            function fontSizeJudul(a) {
+                const judul = document.getElementById('reservasiLabel');
+                const namaRuang = a.closest(".card-body").getElementsByTagName("h5")[0].innerText;
+    
+                if (namaRuang === "Ruang Nakula Sadewa") {
+                    judul.style.fontSize = "24px";
+                } else {
+                    judul.style.fontSize = "28px";
+                }
+            };
+        </script>
 </main>
 <div class="warn">
     <h1>Kami mohon maaf!</h1>
@@ -257,6 +352,5 @@
     <h4>Silahkan coba untuk membuka website dengan layar yang lebih lebar!</h4>
 </div>
 </body>
-
 
 </html>
