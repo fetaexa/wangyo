@@ -98,7 +98,7 @@
             width: 40px;
             height: 40px;
             border-radius: 50%;
-            background: #afafaf;
+            background: #e3e3e3;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -107,9 +107,13 @@
         }
 
         div.booked {
-            background: #5e67fa;
+            background: #2071eb;
+            color: white;
             display: flex;
             z-index: 10;
+            width: 40px;
+            height: 40px;
+
         }
     </style>
 </head>
@@ -120,14 +124,15 @@
     <body style="max-height: 1000px;overflow: hidden;background: linear-gradient(70deg, #2b7ffc,#81aef8);">
         <div class="container-fluid w-100">
             <div class="d-flex align-items-center">
-                <nav class="navbar navbar-expand-lg bg-tertiary w-100 rounded-2">
+                <nav class="navbar navbar-expand-lg bg-tertiary w-100 rounded-2" style="height: 102px;">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <img src="https://i.ibb.co.com/KjHJ5bwS/stembayo-bg.png" alt="stembayo-bg" border="0" width="60px">
-                    <a class="navbar-brand fs-1 fw-bold m-2" href="#">Wangyo</a>
+                    <img src="https://i.ibb.co.com/xqZBcdV8/Untitled66-20251026203112.png" alt="stembayo-bg" border="0"
+                        width="230px">
+                    <!-- <a class="navbar-brand fs-1 fw-bold m-2" href="#">Wangyo</a> -->
                     <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -225,40 +230,73 @@
                             <hr>
                             <p class="card-text">2 AC</p>
                             <hr>
-                            <!-- <p class="card-text"></p> -->
                             <p class="card-text">Mic dan speaker</p>
                             <hr>
+                            <p class="card-text" style="height: 30px;"></p>
                             <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reservasi"
                                 onclick="nama(this);fontSizeJudul(this)">Buat Reservasi</a>
                         </div>
                     </div>
                     <div class="modal fade" id="reservasi" tabindex="-1" aria-labelledby="reservasiLabel"
                         aria-hidden="true" style="overflow: hidden;">
-                        <div class="modal-dialog h-100 d-flex align-items-center" style="width: 100vw;margin: 0;max-width: 60vw;">
+                        <div class="modal-dialog h-100 d-flex align-items-center"
+                            style="width: 100vw;margin: 0;max-width: 60vw;">
                             <!-- KALENDER RESERVASI -->
                             <div class="modal-content m-2"
                                 style="background: linear-gradient(70deg, #2b7ffc57,#81aff814);backdrop-filter: blur(10px);margin: 0;">
                                 <div class="modal-header d-flex justify-content-center">
-                                    <h5 class="modal-title text-light fs-3" id="reservasiKalender">Kalender Reservasi</h5>
+                                    <h5 class="modal-title text-light fs-3" id="reservasiKalender">Kalender Reservasi
+                                    </h5>
                                 </div>
                                 <div class="modal-body bg" style="background: transparent;height: 316px;">
                                     <div class="calendarParent">
-                                        <div class="div1">1</div><div class="div2">2</div><div class="div3">3</div><div class="div4">4</div><div class="div5">5</div>
-                                        <div class="div6">6</div><div class="div7">7</div><div class="div8">8</div><div class="div9">9</div><div class="div10">10</div>
-                                        <div class="div11">11</div><div class="div12">12</div><div class="div13">13</div><div class="div14">14</div><div class="div15">15</div>
-                                        <div class="div16">16</div><div class="div17 booked">17</div><div class="div18 booked">18</div><div class="div19 booked">19</div>
-                                        <div class="div20">20</div><div class="div21">21</div><div class="div22">22</div><div class="div23">23</div><div class="div24">24</div>
-                                        <div class="div25">25</div><div class="div26">26</div><div class="div27">27</div><div class="div28">28</div><div class="div29">29</div>
-                                        <div class="div30">30</div><div class="div31">31</div>
+                                        <div class="div1">1</div>
+                                        <div class="div2">2</div>
+                                        <div class="div3">3</div>
+                                        <div class="div4">4</div>
+                                        <div class="div5">5</div>
+                                        <div class="div6">6</div>
+                                        <div class="div7">7</div>
+                                        <div class="div8">8</div>
+                                        <div class="div9">9</div>
+                                        <div class="div10">10</div>
+                                        <div class="div11">11</div>
+                                        <div class="div12">12</div>
+                                        <div class="div13">13</div>
+                                        <div class="div14">14</div>
+                                        <div class="div15">15</div>
+                                        <div class="div16">16</div>
+                                        <div class="div17 booked">17</div>
+                                        <div class="div18 booked">18</div>
+                                        <div class="div19 booked">19</div>
+                                        <div class="div20">20</div>
+                                        <div class="div21">21</div>
+                                        <div class="div22">22</div>
+                                        <div class="div23">23</div>
+                                        <div class="div24">24</div>
+                                        <div class="div25">25</div>
+                                        <div class="div26">26</div>
+                                        <div class="div27">27</div>
+                                        <div class="div28">28</div>
+                                        <div class="div29">29</div>
+                                        <div class="div30">30</div>
+                                        <div class="div31">31</div>
                                     </div>
                                 </div>
-                                <div class="modal-footer" style="height: 70px;"></div>
+                                <div class="modal-footer d-flex justify-content-start" style="height: 70px;">
+                                    <div class="calendarParent d-flex align-items-center h-100 m-0">
+                                        <div class="div17 booked" id="sign" style="cursor: text;"></div>
+                                        <p class="text-light d-flex align-items-center h-100 mt-3">Reserved</p>
+                                    </div>
+
+                                </div>
                             </div>
                             <!-- MODAL RESERVASI -->
                             <div class="modal-content m-2"
                                 style="background: linear-gradient(70deg, #2b7ffc57,#81aff814);backdrop-filter: blur(10px);">
                                 <div class="modal-header d-flex justify-content-center">
-                                    <h5 class="modal-title text-light" style="font-size: 28px;" id="reservasiLabel"></h5>
+                                    <h5 class="modal-title text-light" style="font-size: 28px;" id="reservasiLabel">
+                                    </h5>
                                 </div>
                                 <div class="modal-body bg" style="background: transparent;">
                                     <form>
@@ -272,9 +310,9 @@
                                         <div class="mb-3">
                                             <input type="date" class="form-control" required>
                                         </div>
-                                        <div class="mb-3">
-                                            <!-- <input type="time" class="form-control" placeholder="waktu"> -->
-                                        </div>
+                                        <!-- <div class="mb-3">
+                                            <input type="time" class="form-control" placeholder="waktu">
+                                        </div> -->
                                         <div class="d-flex flex-column mb-3" style="gap: 10px;">
                                             <div class="d-flex mb-1 text-light">
                                                 <label class="w-50 d-flex justify-content-start">Dari: </label>
@@ -282,8 +320,7 @@
                                             </div>
                                             <div class="d-flex mb-3 gap-3">
                                                 <input type="time" class="form-control" id="to" placeholder="sampai">
-                                                <input type="time" class="form-control" id="from"
-                                                    onkeydown="isKeyPressed(event)" placeholder="dari">
+                                                <input type="time" class="form-control" id="from" placeholder="dari">
                                             </div>
                                         </div>
                                     </form>
@@ -317,7 +354,7 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                     </div>
         </center>
 
@@ -326,18 +363,17 @@
             crossorigin="anonymous"></script>
         <script>
             function nama(a) {
-                event.preventDefault();
                 const judul = document.getElementById('reservasiLabel')
                 const namaRuang = a.closest(".card-body").getElementsByTagName("h5")[0].innerText;
                 document.getElementById("reservasiLabel").innerText = "Buat Reservasi " + namaRuang;
-                
+
             };
         </script>
         <script>
             function fontSizeJudul(a) {
                 const judul = document.getElementById('reservasiLabel');
                 const namaRuang = a.closest(".card-body").getElementsByTagName("h5")[0].innerText;
-    
+
                 if (namaRuang === "Ruang Nakula Sadewa") {
                     judul.style.fontSize = "24px";
                 } else {
